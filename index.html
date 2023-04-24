@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Erchitecture Inc | For Architectural Rendering Services </title>
+  <meta
+    content="Hi, We are a team of architects, interior designers and digital artists based out of Trichur, Kerala who are proficient in the art of photorealistic architectural visualizations"
+    name="description">
+  <meta
+    content="Portfolio, Architectural Services that includes Architectural Rendering, 3D Walkthrough, Architectural Drafting"
+    name="keywords">
+  <meta name="author" content="Erchitecture Inc" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="Erchitecture Inc">
+  <meta name="twitter:site" content="@erchitectureinc">
+  <meta name="twitter:title" content="Erchitecture Inc">
+  <meta name="twitter:creator" content="@erchitectureinc">
+
+  <meta property="og:title" content="Erchitecture Inc">
+  <meta property="og:description" content="Architect Firm based in Kerala">
+  <meta property="og:image"
+    content="https://github.com/inboxpraveen/inboxpraveen.github.io/blob/master/assets/img/hero_3.png">
+  <meta property="og:url" content="https://inboxpraveen.github.io/">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <div id="overlay">
+    <div id="progstat"></div>
+    <div id="progress"></div>
+  </div>
+
+  <script>
+    ; (function () {
+      function id(v) { return document.getElementById(v); }
+      function loadbar() {
+        var ovrl = id("overlay"),
+          prog = id("progress"),
+          stat = id("progstat"),
+          img = document.images,
+          c = 0,
+          tot = img.length;
+        if (tot == 0) return doneLoading();
+
+        function imgLoaded() {
+          c += 1;
+          var perc = ((100 / tot * c) << 0) + "%";
+          prog.style.width = perc;
+          stat.innerHTML = "Loading " + perc;
+          if (c === tot) return doneLoading();
+        }
+        function doneLoading() {
+          ovrl.style.opacity = 0;
+          setTimeout(function () {
+            ovrl.style.display = "none";
+          }, 1200);
+        }
+        for (var i = 0; i < tot; i++) {
+          var tImg = new Image();
+          tImg.onload = imgLoaded;
+          tImg.onerror = imgLoaded;
+          tImg.src = img[i].src;
+        }
+      }
+      document.addEventListener('DOMContentLoaded', loadbar, false);
+    }());
+  </script>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
+      <!-- Uncomment below if you prefer to use an text logo -->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About Us</a></li>
+          <li><a class="nav-link  scrollto" href="#portfolio">Our Services</a></li>
+          <li><a class="nav-link  scrollto" href="#social_content">Social Posts</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact Us</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="home">
+
+    <div class="container">
+      <div class="hero-content">
+        <h1><span class="typed"
+            data-typed-items="ERCHITECTURE INC"></span>
+        </h1>
+
+        <ul class="list-unstyled list-social">
+          <li><a href="https://twitter.com"><i class="bi bi-twitter"></i></a></li>
+          <li><a href="https://www.instagram.com/erchitectureinc/"><i class="bi bi-instagram"></i></a></li>
+          <li><a href="https://www.linkedin.com/"><i class="bi bi-linkedin"></i></a></li>
+
+        </ul>
+      </div>
+    </div>
+  </div><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <div id="about" class="paddsection">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="col-lg-4 ">
+            <div class="div-img-bg">
+              <div class="about-img">
+                <img src="assets/img/hero_3.png" class="img-responsive" alt="me">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <div class="about-descr">
+              <h1>About US</h1>
+              <p class="p-heading">"We create image that can communicate!"</p>
+              <p>We are a team of architects, interior designers and digital artists based out of Trichur, Kerala who are proficient in the art of photorealistic architectural visualizations. We specialize in transforming your projects into inspirational images and videos. We aim to revolutionize the standard of 3D rendering services into a more sophisticated aesthetic, technical support to architects, interior designers and real estate developer companies. Completely focused on one specific module we are able to deliver global standard service for your requirements. To revolutionize the standard of 3D architectural rendering service into a sophisticated aesthetic and technical support to Architects and Interior Designers. We consider ourselves more than simple visualizers. We offer aesthetic design render and real estate renderings.</p>
+              <p class="separator">
+                "We have the passion to focus on even the smaller details to transform your inspiration into realistic high-quality renderings."
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <div id="services" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h1>Our Strength</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-briefcase"></i>
+                <span>Diversified Team</span>
+                <p class="separator">A distinct team of over fifteen between architects, interior designers and artists, we are capable to manage small to large scale projects keeping deliverables always optimal.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-card-checklist"></i>
+                <span>Dedicated Project Coordinator </span>
+                <p class="separator">Only one referee, selected among our senior staff will be assigned to coordinate the team of 3D artists working on your project. A direct, fast and always available support</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-card-checklist"></i>
+                <span>Real-time updates</span>
+                <p class="separator">We use every tool available to always keep our clients updated with the stages of the project, the possibility to book anytime a ZOOM, Skype, WhatsApp call for a revision meeting with screens ON.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="services-block">
+                <i class="bi bi-card-checklist"></i>
+                <span>Clear timeline and fees</span>
+                <p class="separator">To  maintain an in-house designer, we will provide the same with one third of the expense, by providing a dedicated employee/team under our payroll. Each aspect of the project scope of work from the KICKOFF to the revision stages and timelines will be transparently defined from the start.</p>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </div><!-- End Services Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+<div class="container">
+        <div id="portfolio" class="text-center paddsection">
+	   <div class="section-title text-center">
+              <h1>Our Services</h1>
+           </div>
+           <a class="btn" href="./services/all-services.html">Click to view all Our Services</a>
+        </div>
+       
+      
+ </div><!-- End Portfolio Section -->
+
+  
+
+    <!-- ======= Journal Section ======= -->
+    <div id="social_content" class="text-left paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h1>Get to know our Social Presence</h1>
+        </div>
+      </div>
+
+      <div class="container">
+
+        <div class="journal-block">
+
+          <div class="row">
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="https://www.instagram.com/p/CY_o3Afvfrx/?utm_source=ig_web_copy_link"><img
+                    src="assets/img/posts/social_media/p4.png" class="img-responsive" alt="social media post 1"></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="https://www.instagram.com/p/CZRywsnBe3q/?utm_source=ig_web_copy_link"><img
+                    src="assets/img/posts/social_media/p6.png" class="img-responsive" alt="social media post 2"></a>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6">
+              <div class="journal-info">
+                <a href="https://www.instagram.com/p/CY_ogMyvYFc/?utm_source=ig_web_copy_link"><img
+                    src="assets/img/posts/social_media/p7.png" class="img-responsive" alt="social media post 3"></a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div><!-- End Journal Section -->
+
+    <div id="contact" class="paddsection">
+
+      <div class="container">
+        <div class="section-title text-center">
+          <h1>Let us visualize your dream plan, let's make it happen - Contact us now !</h1>
+        </div>
+      </div>
+
+      <div class="container">
+        <div id="footer" class="text-center">
+          <div class="container">
+            <p>Our mission is to provide our clients with a superior and demonstrated value proposition while keeping client focus at the top of everything we do every day.</p>
+            <p>Write us at: <u><a href="erchitectureinc@gmail.com"><i class="bi bi-envelope"></i>
+                  erchitectureinc@gmail.com</u></a></p>
+            <p>Erchitecture Inc, Master Builders and Engineers, Vendore Alagapaa P.O Trichur Kerala 680302 (+91 8606773376)</p>
+            <p>Follow us for more insights and updates.
+            </p>
+            <div class="socials-media text-center">
+              <ul class="list-unstyled">
+                <li><a href="https://twitter.com" target="_blank"><i class="bi bi-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/erchitectureinc/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://www.linkedin.com" target="_blank"><i class="bi bi-linkedin"></i></a></li>
+              </ul>
+            </div>
+            <hr>
+            <p>Download Our Brochure</p>
+
+            <a class="btn" href="assets/brochure.pdf">Download Here</a>
+          </div>
+        </div><!-- End Footer -->
+      </div>
+
+    </div><!-- End Portfolio Section -->
+
+  </main><!-- End #main -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <p class="container text-center lastUpdated" id="lastUpdated"></p>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script>
+    fetch('https://api.github.com/repos/inboxpraveen/inboxpraveen.github.io/commits?per_page=1')
+    .then(res => res.json())
+    .then(res => {
+      output = res[0].commit.committer.date
+      const date = new Date(output);
+      document.getElementById('lastUpdated').innerHTML = "Last Updated on: "+ date
+    })
+
+  </script>
+</body>
+
+</html>
